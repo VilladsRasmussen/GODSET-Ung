@@ -4,22 +4,22 @@
     font-size: 62.5%;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 100;
-    color: #FFEDE2;
+    color: black;
 }
 
 /*font-størrelser--------------------------------------*/
-h1 {
-    font-size: 8rem;
-}
+
 h2 {
     font-size: 4rem;
-    margin: 3rem 0 3rem 0;
+    margin-bottom: 2rem;
     letter-spacing: 3px;
 }
+
 p, li, a {
     font-size: 1.6rem;
     font-family: "Akshar", sans-serif;
 }
+
 body {
     background-color: #1D1D1B;
 }
@@ -45,6 +45,9 @@ body {
     gap: 1rem;
     max-width: 8rem;
     text-align: center;
+}
+.story p {
+    color:#FFEDE2;
 }
 
 /*FORSIDE HERO-----------------------------------------*/
@@ -79,6 +82,7 @@ body {
     letter-spacing: 15px;
     /* line-height: 100%; */
     z-index: 2;
+    font-size: 8rem;
 }
 .forside_hero > p:nth-of-type(1) {
     position: absolute;
@@ -88,7 +92,6 @@ body {
     letter-spacing: 15px;
     margin: 2rem 0 0 8rem;
     opacity: 20%;
-    /* line-height: 100%; */
     z-index: 1;
 }
 
@@ -108,9 +111,12 @@ body {
     font-size: 3rem;
 }
 .forside_hero a {
+    position:absolute;
+    margin: 30.5rem 2rem 0 16rem;
+}
+.knap_blå, .knap_rød, .knap_grøn {
     width: 14rem;
     height: 5rem;
-    position:absolute;
     font-size: 3rem;
     font-family: "Bebas Neue", sans-serif;
     background-color: black;
@@ -119,8 +125,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color:#FFEDE2;
+}
+.knap_blå {
     filter: drop-shadow(5px 5px 0px #6799EE);
-    margin: 32rem 2rem 0 16rem;
+}
+.knap_rød {
+    filter: drop-shadow(5px 5px 0px #EA7067);
+}
+.knap_grøn {
+    filter: drop-shadow(5px 5px 0px #46C393);
 }
 
 
@@ -153,6 +167,7 @@ footer {
 }
 footer li {
     list-style-type: none;
+    color:#FFEDE2;
 }
 footer ul {
     padding: 0;
@@ -166,24 +181,183 @@ hr {
     display: flex;
     gap: 2rem;
 }
+footer h2 {
+    color:#FFEDE2;
+}
+footer p, footer a {
+    color:#FFEDE2;
+}
+
+/*kommende events side-------------*/
+
+/*hero på kommende events siden-----------*/
+
+.hero-kommende-events {
+    position: relative;
+    height: 40rem;
+    background: url(../img/Godset\ koncert.JPG) no-repeat center center/cover;
+    overflow: hidden;
+    margin-bottom: 10rem;
+  }
+  
+  /* Blå firkant i venstre hjørne */
+  .blå-firkant {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    background-color: #6799EE;
+    clip-path: polygon(0 0, 100% 0, 20% 100%, 0 100%);
+    z-index: 1;
+    opacity: 70%;
+  }
+  
+  /* Blå trekant i højre hjørne */
+  .blå-trekant {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    height: 60%;
+    background-color: #6799EE;
+    clip-path: polygon(100% 100%, 0 100%, 100% 0);
+    z-index: 1;
+    opacity: 70%;
+  }
+  
+  /* Tekst */
+  .hero-tekst {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    font-size: 8rem;
+    transform: translateY(-50%);
+    color: black;
+    z-index: 2;
+  }
 
 
+  /*farvede firkanter med kommende events*/
+
+  .de-kommende-events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .kommende-event-box1 {
+    width: 35rem;
+    height: 30rem;
+    background-color: #EA7067;
+    border-radius: 10px;
+    overflow: hidden; /* Sørger for at billede ikke stikker ud */
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .kommende-billede {
+    width: 19rem;
+    height: 30rem;
+    object-fit: cover;
+    padding: 2rem;
+    border-radius: 30px;
+  }
+
+  .kommende-events-overskrift {
+   padding: 20px;
+   font-size: 3.5rem;
+  }
+
+  .info-kommende-events {
+    padding: 20px;
+    font-size: 2.5rem;
+  }
+
+  .om-events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .kommende-event-box2 {
+    width: 35rem;
+    height: 30rem;
+    background-color: #6799EE;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .kommende-event-box3 {
+    width: 35rem;
+    height: 30rem;
+    background-color: #46C393;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
 
 
 /* PROGRAM UNDERSIDE ---------------------------------------*/
 
-/* HERO */
+.hidden { /* For at skjule elementer */
+    display: none;
+}
 
-.hero {
-    background-image: 
-        linear-gradient(
-            rgba(70, 195, 147, 0.8),
-            rgba(70, 195, 147, 0.8)
-        ),
-        url('../img/hans-vivek-By96LAr-34o-unsplash.jpg');
-    background-size: cover;
-    height: 400px;
+.program-h1 {
+    font-size: 6rem;
+    text-align: center;
     padding: 20px;
+}
+
+.program-h3 {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+/* PROGRAM-HERO */
+
+.hero-program-baggrund-cut {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    clip-path: polygon(100% 0, 100% 25%, 25% 100%, 0 100%);
+    z-index: 999;
+}
+
+.hero-program-baggrund-gennemsigtig {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.hero-program-baggrund {
+    background-color: rgba(70, 195, 147, 0.8);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    z-index: 999;
+}
+
+.hero-program-baggrund img {
+    position: absolute;
+    object-fit: cover; /* Ensures the images cover the container */
+}
+
+.grøn-overlay {
+    background-color: rgba(70, 195, 147, 0.8);
+    max-height: 400px;
+    max-width: auto;
 }
 
 .hero-beskriver {
@@ -193,42 +367,40 @@ hr {
 }
 
 .paragraf-fremhæver {
-    color: white;
-    font-size: 22px;
-    font-family: 'Akshar';
+    color: #FFEDE2;
+    font-size: 1.8rem;
+    font-family: 'Akshar', sans-serif;
+    text-align: left;
 }
 
+.hero-program-baggrund h1 {
+    position: absolute;
+    padding: 20px;
+    color: black;
+}
 
 /* Program */
 
 .program {
     padding: 20px;
     display: grid;
-    grid-template-columns: 10% 1fr;
-    grid-template-rows: 5% 1fr;
-    row-gap: 25px;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(7, 100%);
 }
 
 .program h2 {
     grid-row: 1 / 2;
-    grid-column: 1 / 3;
+    grid-column: 1 / 2;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 25px;
 }
 
 .program > article > p {
     padding-bottom: 3px;
 }
 
-
 /* Tidslinje */
-
-.tidslinje-program {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    padding-top: 6px;
-}
 
 .cirkel-grøn {
     background-color: rgba(70, 195, 147, 1);
@@ -254,32 +426,296 @@ hr {
     margin: 0 auto;
 }
 
-
-.cirkel-forbinder {
+.cirkel-streg {
     background-color: grey;
     width: 4px;
-    height: 150px;
+    height: 100%;
     margin: 0 auto;
 }
 
+.punkt-program-1 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
 
+.punkt-program-2 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.punkt-program-3 {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.punkt-program-4 {
+    grid-row: 5/6;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.punkt-program-5 {
+    grid-row: 6/7;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.punkt-program-6 {
+    grid-row: 7/8;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.grøn-overskrift {
+    color: rgba(70, 195, 147, 1) !important;
+    text-align: start;
+}
+
+.rød-overskrift {
+    color: rgba(234, 112, 103, 1) !important;
+    text-align: start;
+}
+
+.blå-overskrift {
+    color: rgba(103, 153, 238, 1) !important;
+    text-align: start;
+}
 
 /* Sektion om Morten Munster */
 
-.morten-munster-hero {
-    background-image: 
-        linear-gradient(
-            rgba(70, 195, 147, 0.8),
-            rgba(70, 195, 147, 0.8)
-        ),
-        url('../img/morten-munster.jpg');
-    background-size: cover;
-    height: 400px;
+.h2-hero {
+    font-size: 4rem; /* ÆNDRER INDEN PUSH */
+    text-align: start;
+    color: black;
+    position: absolute;
+    z-index: 2000;
     padding: 20px;
 }
 
-.h2-hero {
-    font-size: 60px;
-    text-align: start;
-    color: black;
+.morten-munster {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
+
+.morten-munster-video h3 {
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+    font-size: 3.5rem;
+}
+
+.morten-munster-video div {
+    display: flex; 
+    justify-content: center;
+}
+
+iframe {
+
+    position: none;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.morten-munster-sociale-medier h3 {
+    text-align: center;
+    padding: 20px;
+    font-size: 3.5rem;
+}
+
+.morten-munster-sociale-medier div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.fab {
+    font-size: 6rem;
+    color: #FFEDE2;
+}
+
+/* Sektion i program tilmeldning */
+
+.program-tilmelding {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.program-tilmeldning > article {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 20rem;
+}
+
+.program-tilmeldning > article > h4, i {
+    font-size: 2.6rem;
+    color: #FFEDE2;
+}
+
+/*om Godset--------------------------------*/
+
+/* Reset and base styles */
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    overflow: hidder;
+    
+}
+
+/* Hero section */
+.hero-om-godset {
+    position: relative;
+    height: 40rem;
+    background: url(../img/Godset\ koncert.JPG) no-repeat center center/cover;
+    overflow: hidden;
+     margin-bottom: 10rem;  
+}
+
+
+
+/* Section styles */
+
+
+.info-section {
+    min-width: 30rem;
+    min-height: 50rem;
+    padding: 40px;
+    position: relative;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 1rem;
+    background-color: #EA7067;
+}
+
+.info-section p {
+    font-size: 2rem;
+}
+
+.talent-section {
+    min-width: 30rem;
+    min-height: 40rem;
+    padding: 40px;
+    position: relative;
+    border-radius: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: #6799EE;
+}
+
+.talent-section p {
+    font-size: 2rem;
+}
+
+
+.virtual-tour {
+    min-width: 30rem;
+    min-height: 40rem;
+    padding: 40px;
+    position: relative;
+    border-radius: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: #46C393;
+}
+
+.virtual-tour p {
+    font-size: 2rem;
+}
+
+/* Links in sections */
+.info-section a {
+    color: #cc4444;
+}
+
+.talent-section a {
+    color: #1a5cb3;
+}
+
+.virtual-tour a {
+    color: #2d995f;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .diagonal-overlay {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        opacity: 0.5;
+    }
+}
+
+.allebokse{
+
+    display: flex    ;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid black;
+    max-width: 300px;
+}
+
+
+/*kommende events side og om godset-------------------------------*/
+
+  @media screen and (min-width: 1001px) {
+
+    .de-kommende-events {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+    }
+
+    .kommende-event-box1{
+        width: 40rem;
+    }
+
+    .kommende-event-box2 {
+        width: 40rem;
+    }
+
+    .kommende-event-box3 {
+        width: 40rem;
+    }
+
+    
+    .info-section {
+        max-width: 100rem;
+    }
+    
+    
+    .talent-section {
+        max-width: 100rem;
+
+    }
+        
+    
+    .virtual-tour {
+        max-width: 100rem;
+    }
+
+  }
