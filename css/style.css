@@ -7,7 +7,7 @@
     color: black;
 }
 
-/*font-størrelser--------------------------------------*/
+/*font-størrelser-------------------------------*/
 
 h2 {
     font-size: 4rem;
@@ -24,7 +24,7 @@ body {
     background-color: #1D1D1B;
 }
 
-/*STORIES-----------------------------------------------*/
+/*STORIES---------------------------------------*/
 
 .story {
     display: flex;
@@ -39,7 +39,7 @@ body {
     border-radius: 50%;
     border: #46C393 solid 3px;
 }
-.story div {
+.story a {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -51,68 +51,202 @@ body {
 }
 
 
+/*FORSIDE HERO-----------------------------*/
+.forside_hero {
+    position: relative;
+}
+.forside_hero div:nth-of-type(4) {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.forside_hero h1 {
+    font-size: 8rem;
+    color:#EA7067;
+    line-height: 100%;
+    filter: drop-shadow(6px 6px 0px #000000);
+    letter-spacing: 15px;
+    padding-left: 2rem;
+}
+.forside_hero p:first-of-type {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+.forside_hero p:last-of-type {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
 
 
 .forside_hero img {
     object-fit: cover;
     width: 100%;
-    height: 40rem;
+    height: 45rem;
 }
-.forside_hero div:first-of-type {
+.forside_hero div:nth-of-type(1) {
     width: 100%;
-    height: 40rem;
+    height: 45rem;
     background-color: #46C393;
     position: absolute;
     opacity: 70%;
-    clip-path: polygon(0 0, 100% 0, 100% 30%, 30% 100%, 0 100%, 0 0);
+    clip-path: polygon(45% 0, 100% 0, 100% 60%, 60% 100%, 0 100%, 0 45%, 45% 0);
 }
-.forside_hero div:last-of-type {
+.forside_hero div:nth-of-type(2) {
     width: 100%;
-    height: 40rem;
+    height: 45rem;
     background-color: #EA7067;
     position: absolute;
     opacity: 70%;
-    clip-path: polygon(100% 35%, 100% 100%, 35% 100%, 100% 35%);
+    clip-path: polygon(100% 65%, 100% 100%, 65% 100%, 100% 65%);
 }
-.forside_hero h1 {
+.forside_hero div:nth-of-type(3) {
+    width: 100%;
+    height: 45rem;
+    background-color: #6799EE;
     position: absolute;
-    color: black;
-    margin: 2rem 0 0 2rem;
-    letter-spacing: 15px;
-    /* line-height: 100%; */
-    z-index: 2;
-    font-size: 8rem;
-}
-.forside_hero > p:nth-of-type(1) {
-    position: absolute;
-    color: black;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 8rem;
-    letter-spacing: 15px;
-    margin: 2rem 0 0 8rem;
-    opacity: 20%;
-    z-index: 1;
+    opacity: 70%;
+    clip-path: polygon(0 0, 40% 0, 0 40%, 0 0);
 }
 
-.forside_hero > p:nth-of-type(2) {
-    position: absolute;
-    color: black;
-    margin: 21rem 0 0 2rem;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 3rem;
-    max-width: 20rem;
+/*FORSIDE HERO BESKRIVELSE----------------------*/
+.forside_hero_beskrivelse div {
+    background-color: #373737;
 }
-.forside_hero > p:nth-of-type(3) {
-    position: absolute;
-    color: black;
-    margin: 10.2rem 0 0 2rem;
+.forside_hero_beskrivelse p {
+    color:#FFEDE2;
+    padding: 2rem;
+}
+
+
+/*FORSIDE EVENTS----------------------------*/
+
+.forside_flere_events {
+    padding: 5rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+.forside_flere_events h2 {
+    color:#FFEDE2;
+    text-align: center;
+    margin: 0;
+    grid-area: forside_flere_events_h2;
+}
+.forside_flere_events > a {
+    color:#46C393;
+    font-size: 3rem;
     font-family: "Bebas Neue", sans-serif;
+    text-decoration: underline;
+    grid-area: forside_flere_events_alle;
+}
+.forside_flere_events > a:hover {
+    color:#6799EE;
+}
+.forside_event {
+    min-width: 100%;
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    border-radius: 10px;
+}
+.forside_event img {
+    max-width: 12rem;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.forside_event div {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.forside_event h3 {
     font-size: 3rem;
 }
-.forside_hero a {
+.forside_event_tekst > p:first-of-type, .forside_event_tekst > p:last-of-type {
+    font-size: 2rem;
+    font-family: "Bebas Neue", sans-serif;
+}
+#forside_event1 {
+    background-color: #EA7067;
+    grid-area: forside_event1;
+}
+#forside_event2 {
+    background-color:#6799EE;
+    grid-area: forside_event2;
+}
+#forside_event3 {
+    background-color:#46C393;
+    grid-area: forside_event3;
+}
+
+/*Forside INFO --------------------------------*/
+.forside_mere_info h2 {
+    color:#FFEDE2;
+    margin: 0;
+    text-align: center;
+    grid-area: forside_mere_info_h2;
+}
+.forside_mere_info {
+    padding: 5rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.forside_info {
+    min-width: 100%;
+    max-height: 30rem;
+    position:relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.forside_info img {
+    width: 100%;
+    object-fit: cover;
+    opacity: 30%;
+    border-radius: 10px;
+}
+.forside_info div {
     position:absolute;
-    margin: 30.5rem 2rem 0 16rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
 }
+.forside_info p, .forside_info h3 {
+    color: #FFEDE2;
+}
+.forside_info h3 {
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+}
+#forside_info1 {
+    border: #EA7067 solid 5px;
+    grid-area: forside_info1;
+}
+#forside_info1 h3:hover {
+    color:#EA7067;
+}
+#forside_info2 h3:hover {
+    color:#6799EE;
+}
+#forside_info2 {
+    border: #6799EE solid 5px;
+    grid-area: forside_info2;
+}
+
+
+
+/*KNAPPER-----------------------------------*/
 .knap_blå, .knap_rød, .knap_grøn {
     width: 14rem;
     height: 5rem;
@@ -129,27 +263,38 @@ body {
 .knap_blå {
     filter: drop-shadow(5px 5px 0px #6799EE);
 }
+
+.knap_blå:hover {
+    color:#6799EE;
+}
+
 .knap_rød {
     filter: drop-shadow(5px 5px 0px #EA7067);
 }
+.knap_rød:hover {
+    color:#EA7067;
+}
+
 .knap_grøn {
     filter: drop-shadow(5px 5px 0px #46C393);
 }
-
+.knap_grøn:hover {
+    color:#46C393;
+}
 
 /*header--------------------------------------------*/
 header {
     background-color: #1D1D1B;
     padding: 2rem;
-    max-height: 96px;
+    min-height: 8rem;
+    max-height: 10rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
-}
-header > div {
-    display:flex;
-    gap: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 .logo {
     max-width: 15rem;
@@ -158,11 +303,50 @@ i {
     font-size: 3rem;
     color: white;
 }
+header > nav {
+    display: flex;
+    gap: 2rem;
+}
+
+/*Burgermenu*/
+.sidebar_input, .sidebar_label_close, .sidebar_content {
+    display: none;
+}
+.sidebar_input:checked ~ .sidebar_label_close {
+    display: flex;
+}
+.sidebar_input:checked ~ .sidebar_label_open {
+    display: none;
+}
+.sidebar_input:checked ~ .sidebar_content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 2rem;
+    top: 8rem;
+    right: 0;
+    background-color:#1D1D1B;
+    padding: 2rem;
+    width: 100%;
+    height: 100vh;
+}
+.sidebar_input:checked ~ .sidebar_content a {
+    font-size: 3rem;
+    color:#FFEDE2;
+    font-family: "Bebas Neue", sans-serif;
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+}
+.sidebar_input:checked ~ .sidebar_content div {
+    height: 2rem;
+}
+
 
 
 /*footer------------------------------------------*/
 footer {
     padding: 2rem;
+    margin-top: 5rem;
 }
 footer li {
     list-style-type: none;
@@ -182,6 +366,7 @@ hr {
 }
 footer h2 {
     color:#FFEDE2;
+    margin-top: 2rem;
 }
 footer p, footer a {
     color:#FFEDE2;
@@ -196,7 +381,8 @@ footer p, footer a {
     height: 40rem;
     background: url(../img/Godset\ koncert.JPG) no-repeat center center/cover;
     overflow: hidden;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
+    padding: 2rem;
   }
   
   /* Blå firkant i venstre hjørne */
@@ -228,8 +414,7 @@ footer p, footer a {
   /* Tekst */
   .hero-tekst {
     position: absolute;
-    top: 20%;
-    left: 7%;
+    padding-top: 16rem;
     font-size: 8rem;
     transform: translateY(-50%);
     color: black;
@@ -244,65 +429,234 @@ footer p, footer a {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+    padding: 0 2rem;
   }
 
   .kommende-event-box1 {
-    width: 35rem;
+    min-width: 100%;
     height: 30rem;
-    background-color: #EA7067;
-    border-radius: 10px;
+    background-color: #EB8E87;
+    border-radius: 1rem;
     overflow: hidden; /* Sørger for at billede ikke stikker ud */
-    text-align: center;
     display: flex;
-    justify-content: space-between;
+    position: relative;
+    padding-right: 2rem;
   }
+
+  .overlay-trekant-rød {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 30%;
+    width: 100%;
+    height: 100%;
+    background-color: #EA7067;
+    clip-path: polygon(100% 100%, 0 100%, 100% 0);
+    z-index: 0;
+    opacity: 60%;
+    rotate: 270deg;
+  }
+  
 
   .kommende-billede {
     width: 19rem;
     height: 30rem;
     object-fit: cover;
     padding: 2rem;
-    border-radius: 30px;
+    border-radius: 3rem;
+    z-index: 2;
   }
 
   .kommende-events-overskrift {
-   padding: 20px;
-   font-size: 3.5rem;
+    padding-top: 2rem;
+    font-size: 3.5rem;
+    z-index: 1;
   }
 
   .info-kommende-events {
-    padding: 20px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     font-size: 2.5rem;
+    z-index: 1;
   }
 
   .om-events {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
-
   .kommende-event-box2 {
-    width: 35rem;
+    min-width: 100%;
     height: 30rem;
-    background-color: #6799EE;
+    background-color: #8DAFE9;
     border-radius: 10px;
     overflow: hidden;
-    text-align: center;
     display: flex;
-    justify-content: space-between;
+    position: relative;
+    padding-right: 2rem;
+  }
+
+  .overlay-trekant-blå {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 30%;
+    width: 100%;
+    height: 100%;
+    background-color: #6799EE;
+    clip-path: polygon(100% 100%, 0 100%, 100% 0);
+    z-index: 0;
+    opacity: 60%;
+    rotate: 270deg;
   }
 
   .kommende-event-box3 {
-    width: 35rem;
+    min-width: 100%;
     height: 30rem;
-    background-color: #46C393;
-    border-radius: 10px;
+    background-color: #6DD6AE;
+    border-radius: 1rem;
     overflow: hidden;
-    text-align: center;
     display: flex;
-    justify-content: space-between;
+    position: relative;
+    padding-right: 2rem;
   }
+
+  .overlay-trekant-grøn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 30%;
+    width: 100%;
+    height: 100%;
+    background-color: #46C393;
+    clip-path: polygon(100% 100%, 0 100%, 100% 0);
+    z-index: 0;
+    opacity: 60%;
+    rotate: 270deg;
+  }
+
+  /*pop up----------------*/
+
+.pop-up {
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0 5rem 0;
+}
+
+ /* Link der åbner pop up------------------------*/
+ .pop-up-åben {
+    color: #46C393;
+    font-size: 3rem;
+    cursor: pointer;
+    text-decoration: underline
+  }
+  .pop-up-åben:hover {
+    color:#6799EE;
+  }
+
+  /* Skjul checkbox */
+  .popup-checkbox {
+    display: none;
+  }
+  
+  /* Pop-up overlay */
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+    background-color: #2c2c2c;
+  }
+  
+  .popup-checkbox:checked ~ .popup-overlay {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  /* Pop-up boksen */
+  .popup-box {
+    background-color: #373737;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.3);
+    position: relative;
+    border: 0.3rem solid black;
+  }
+  
+  
+  /* Besked */
+  .popup-besked {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+    color: white;
+  }
+  
+  /* Knapper */
+  .popup-valg-knapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .btn-ja, .btn-nej {
+    border: none;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    width: 8rem;
+    color: white;
+  }
+
+  .btn-ja:hover {
+    color: #46C393
+  }
+
+  .btn-nej:hover {
+    color: #EA7067;
+  }
+  
+  /* Ja-knap */
+  .btn-ja {
+    background-color: black;
+    box-shadow: 0.4rem 0.5rem #46C393;
+  }
+  
+  .btn-ja:active {
+    transform: translateY(0.2rem);
+    box-shadow: 0.4rem 0.5rem #46C393;
+  }
+  
+  /* Nej-knap */
+  .btn-nej {
+    background-color: black;
+    box-shadow: 0.4rem 0.5rem #EA7067;
+    cursor: pointer;
+  }
+  
+  .btn-nej:active {
+    transform: translateY(0.2rem);
+    box-shadow: 0.4rem 0.5rem #EA7067;
+  }
+
+  
 
 
 /* PROGRAM UNDERSIDE ---------------------------------------*/
@@ -311,80 +665,146 @@ footer p, footer a {
     display: none;
 }
 
-.program-h1 {
+.underside-h1 { 
     font-size: 6rem;
+    position: relative;
+    color: black;
+    z-index: 10;
+    line-height: 1.1;
+}
+
+.program-h2 {
+    font-size: 5rem;
     text-align: center;
-    padding: 20px;
 }
 
 .program-h3 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.program-h4 {
     font-size: 3.5rem;
     text-align: center;
 }
 
+.kaos-band-program-knap {
+    position: relative;
+    z-index: 10;
+    width: fit-content;
+    padding: 20px;
+    font-size: 2.5rem;
+}
+
 /* PROGRAM-HERO */
 
-.hero-program-baggrund-cut {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    clip-path: polygon(100% 0, 100% 25%, 25% 100%, 0 100%);
-    z-index: 999;
+.kaos-band-program-hero {
+    position: relative;
+    height: 30rem;
+    background: url(../img/hans-vivek-By96LAr-34o-unsplash.jpg) no-repeat center center/cover;
+    overflow: hidden;
 }
 
-.hero-program-baggrund-gennemsigtig {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    z-index: -1;
-    opacity: 0.5;
+.startside-hero  {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.hero-program-baggrund {
-    background-color: rgba(70, 195, 147, 0.8);
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    z-index: 999;
-}
-
-.hero-program-baggrund img {
+.grøn-boks {
     position: absolute;
-    object-fit: cover; /* Ensures the images cover the container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(70, 195, 147, 1);
+    clip-path: polygon(98% 0%, 30% 100%, 0 100%, 0 0);
+    z-index: 1;
+    opacity: 70%;
 }
 
-.grøn-overlay {
-    background-color: rgba(70, 195, 147, 0.8);
-    max-height: 400px;
-    max-width: auto;
+.grøn-streg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(70, 195, 147, 1);
+    clip-path: polygon(100% 2%, 100% 6%, 37% 100%, 34% 100%);
+    z-index: 1;
+    opacity: 70%;
 }
 
-.hero-beskriver {
+.rød-boks {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(234, 112, 103, 1);
+    clip-path: polygon(100% 40%, 100% 100%, 60% 100%);
+    z-index: 1;
+    opacity: 70%;
+}
+
+.rød-streg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(234, 112, 103, 1);
+    clip-path: polygon(100% 31%, 100% 36%, 57% 100%, 53% 100%);
+    z-index: 1;
+    opacity: 70%;
+}
+
+.hero-beskrivelse {
     width: auto;
+    height: auto;
     background-color: rgba(55, 55, 55, 1);
     padding: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
 }
 
-.paragraf-fremhæver {
+.grå-streg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1D1D1B;
+    clip-path: polygon(40% 0, 44% 0, 80% 100%, 76% 100%);
+    z-index: -1;
+    opacity: 70%;
+}
+
+.paragraf-fremhæver, .paragraf-hero, .paragraf-hero-morten {
     color: #FFEDE2;
-    font-size: 1.8rem;
+    font-size: 2.1rem;
     font-family: 'Akshar', sans-serif;
     text-align: left;
+    font-weight: 400;
 }
 
-.hero-program-baggrund h1 {
-    position: absolute;
-    padding: 20px;
-    color: black;
+/* MAIN INDHOLD */
+
+.kaos-band-indhold {
+    display: flex;
+    flex-direction: column;
 }
+
 
 /* Program */
 
 .program {
     padding: 20px;
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(7, 100%);
+    grid-template-rows: 80px;
+    grid-template-columns: 100% repeat(6, 100%);
 }
 
 .program h2 {
@@ -392,14 +812,18 @@ footer p, footer a {
     grid-column: 1 / 2;
     margin: 0;
     text-align: center;
+    color: #FFEDE2;
+}
+
+.program > div {
     padding-bottom: 25px;
 }
 
-.program > article > p {
-    padding-bottom: 3px;
-}
-
 /* Tidslinje */
+
+.cirkel-forbinder {
+    padding-top: 10px;
+}
 
 .cirkel-grøn {
     background-color: rgba(70, 195, 147, 1);
@@ -428,56 +852,44 @@ footer p, footer a {
 .cirkel-streg {
     background-color: grey;
     width: 4px;
-    height: 100%;
+    height: 110%;
     margin: 0 auto;
+}
+
+.punkt-program-alle {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .punkt-program-1 {
     grid-row: 2/3;
     grid-column: 1/2;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
 }
 
 .punkt-program-2 {
     grid-row: 3/4;
     grid-column: 1/2;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
 }
 
 .punkt-program-3 {
     grid-row: 4/5;
     grid-column: 1/2;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
 }
 
 .punkt-program-4 {
     grid-row: 5/6;
     grid-column: 1/2;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
 }
 
 .punkt-program-5 {
     grid-row: 6/7;
     grid-column: 1/2;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
 }
 
 .punkt-program-6 {
     grid-row: 7/8;
     grid-column: 1/2;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
 }
 
 .grøn-overskrift {
@@ -497,25 +909,71 @@ footer p, footer a {
 
 /* Sektion om Morten Munster */
 
-.h2-hero {
-    font-size: 4rem; /* ÆNDRER INDEN PUSH */
-    text-align: start;
-    color: black;
+.hero-collector {
+    display: flex;
+    flex-direction: column;
+}
+
+.morten-munster-aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-program-baggrund-morten {
+    position: relative;
+    height: 30rem;
+    width: 100%;
+    background: url(../img/morten-munster.jpg) no-repeat center center/cover;
+    transform: scaleX(-1);
+    background-size: 125%;
+    background-position-x: -100px;
+    overflow: hidden;
+}
+
+.blå-boks-morten {
     position: absolute;
-    z-index: 2000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(103, 153, 238, 1);
+    clip-path: polygon(100% 0%, 30% 100%, 0 100%, 0 0);
+    z-index: 1;
+    opacity: 70%;
+    transform: scaleX(-1);
+}
+
+.grøn-boks-morten {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(70, 195, 147, 1);
+    clip-path: polygon(100% 40%, 100% 100%, 60% 100%);
+    z-index: 1;
+    opacity: 70%;
+    transform: scaleX(-1);
+}
+
+
+.h2-hero-morten {
+    position: relative;
     padding: 20px;
+    color: black;
+    z-index: 10;
+    font-size: 5.5rem;
+    line-height: 1.1;
+    transform: scaleX(-1);
+    margin-bottom: 0;
+    letter-spacing: 0;
 }
 
 .morten-munster {
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-}
-
-.morten-munster-video h3 {
-    text-align: center;
-    padding: 40px 20px 20px 20px;
-    font-size: 3.5rem;
+    gap: 30px;
 }
 
 .morten-munster-video div {
@@ -523,21 +981,31 @@ footer p, footer a {
     justify-content: center;
 }
 
-iframe {
-
+.senest-video {
     position: none;
     display: flex;
+    height: 178px;
     justify-content: center;
     object-fit: cover;
+    border: 5px solid white;
+    transition: border-image 0.5s ease;
 }
 
-.morten-munster-sociale-medier h3 {
+.senest-video:hover {
+    border-image: linear-gradient(
+        to right, 
+        rgba(103, 153, 238, 1),
+        rgba(70, 195, 147, 1),
+        rgba(234, 112, 103, 1)
+    ) 1;
+}
+
+.morten-munster-some h3 , .morten-munster-video h3 {
     text-align: center;
     padding: 20px;
-    font-size: 3.5rem;
 }
 
-.morten-munster-sociale-medier div {
+.morten-munster-some div {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -549,47 +1017,317 @@ iframe {
     color: #FFEDE2;
 }
 
-/* Sektion i program tilmeldning */
-
-.program-tilmelding {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    flex-direction: row;
+.fa-tiktok:hover {
+    color: rgba(70, 195, 147, 1)
 }
 
-.program-tilmeldning > article {
+.fa-instagram:hover {
+    color: rgba(103, 153, 238, 1)
+}
+
+.fa-youtube:hover {
+    color:rgba(234, 112, 103, 1)
+}
+
+/* KAOS BAND -> Program Tilmeldning */
+
+.tilmeldning {
+    background-color: #373737;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 20px 20px 20px;
+}
+
+#tilmeldning-id {
+    scroll-margin-top: 100px;
+}
+
+.tilmeldning > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.tilmeldning > article > h4 {
+    font-size: 3.0rem;
+    text-align: center;
+    color: #FFEDE2
+}
+
+/* KAOS BAND PROGRAM -> Computer-ændringer */
+
+@media screen and (min-width: 1001px) {
+
+    .underside-h1 {
+        font-size: 8rem;
+        position: relative;
+        color: black;
+        z-index: 10;
+        line-height: 1.1;
+    }
+
+    .kaos-band-program-knap {
+        font-size: 4rem;
+        height: 7rem;
+    }
+
+    .startside-hero {
+        padding: 45px;
+    }
+
+    .paragraf-hero {
+        font-size: 3.5rem;
+        padding: 0 20px;
+    }
+
+    .paragraf-hero-morten {
+        font-size: 2.5rem;
+        padding: 0 5px;
+        text-align: left;
+    }
+
+    .kaos-band-indhold {
+        flex-direction: row-reverse;
+        margin-top: 20px;
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .program {
+        width: 75%;
+        border: 2px dotted white;
+        border-radius: 20px;
+    }
+
+    .program > div {
+        padding-bottom: 50px;
+    }
+
+    .cirkel-streg {
+        height: 129%;
+    }
+
+    .paragraf-fremhæver {
+        margin-bottom: 30px;
+    }
+
+    .punkt-program-alle article {
+        margin-bottom: -50px;
+    }
+
+    .morten-munster-aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .hero-program-baggrund-morten {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .hero-collector > article {
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .morten-munster {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .tilmeldning {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .tilmeldning > article > h4 {
+        font-size: 4rem;
+    }
+
+}
+/*PROGRAMSLUT*/
+
+/* STORY SECTION */
+
+.transparent {
+    visibility: hidden;
+}
+
+.story-video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.story-header {
+    position: absolute;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 100%;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(
+        rgba(29, 29, 27, 0.9) 75%,
+        rgba(255, 0, 0, 0) 100% 
+      );
+}
+
+.story-knap-tilbage {
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;   
+}
+
+.fa-arrow-left {
+    position: relative;
+    z-index: 100;
+    padding: 16px;
+    font-size: 4rem; 
+}
+
+.skaber-info {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+    margin: 0;
+}
+
+.brugernavn-og-billede {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.profilbillede {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #6799EE;
+}
+
+.brugernavn {
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+}
+
+.tid-siden {
+    font-size: 2.5rem;
+    color: grey;
+    font-weight: 400;
+}
+
+.story-footer {
+    position: absolute;
+    top: 82.5%;
+    padding-top: 20px;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(
+        rgba(29, 29, 27, 0.0) 0%,
+        rgba(29, 29, 29, 1) 25% 
+      );
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.skaber-kommentar {
+    display: flex;
     flex-direction: column;
-    max-width: 20rem;
+    padding: 20px;
+    margin: 0;
 }
 
-.program-tilmeldning > article > h4, i {
-    font-size: 2.6rem;
-    color: #FFEDE2;
+.skaber-tekst {
+    color: white;
+    line-height: 0.3;
 }
 
-/*om Godset--------------------------------*/
+.fa-heart {
+    font-size: 4rem;
+    color: white;
+    padding: 20px;
+}
 
-/* Reset and base styles */
+.progress-container {
+    position: absolute;
+    width: 100%;
+    background-color: #e0e0e0;
+    overflow: hidden;
+    height: 20px;
+    top: 98%;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(
+        90deg,              
+        #6799EE,            
+        #46C393, 
+        #EA7067            
+    );
+    transition: width 0.5s ease-in-out;
+    animation: progress-animation 20s forwards;
+}
+
+@keyframes progress-animation {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@media screen and (min-width: 500px) {
+
+    .story-body, .story-footer, .story-header, .progress-container {
+        width: 400px;
+    }
+
+    .story-body {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+/*STORYSLUT*/
+
+
+
+/*OM GODSET--------------------------------*/
 
 .container {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 7rem;
-    overflow: hidder;
+    overflow: hidden;
     
 }
 
 /* Hero section */
 .hero-om-godset {
+    padding: 2rem;
     position: relative;
     height: 40rem;
     background: url(../img/Godset\ koncert.JPG) no-repeat center center/cover;
     overflow: hidden;
-     margin-bottom: 10rem;  
+    margin-bottom: 10rem;  
 }
 
 
@@ -605,12 +1343,10 @@ iframe {
     margin-left: 2rem;
     margin-right: 2rem;
     border-radius: 1rem;
-    background-color: #EA7067;
+    overflow: hidden;
+    background-color: #EB8E87;
 }
 
-.info-section p {
-    font-size: 2rem;
-}
 
 .talent-section {
     min-width: 30rem;
@@ -620,11 +1356,18 @@ iframe {
     border-radius: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
-    background-color: #6799EE;
+    background-color: #8DAFE9;
+    overflow: hidden;
 }
 
-.talent-section p {
+.talent-section p, .info-section p, .virtual-tour p {
     font-size: 2rem;
+    z-index: 1;
+    position: relative;
+}
+.talent-section h2, .info-section h2, .virtual-tour h2 {
+    z-index: 1;
+    position: relative;
 }
 
 
@@ -636,25 +1379,17 @@ iframe {
     border-radius: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
-    background-color: #46C393;
+    background-color: #6DD6AE;
+    overflow: hidden;
 }
 
-.virtual-tour p {
-    font-size: 2rem;
-}
 
 /* Links in sections */
-.info-section a {
-    color: #cc4444;
+.info-section a, .talent-section a, .virtual-tour a{
+    font-size: 2rem;
+    color: black;
 }
 
-.talent-section a {
-    color: #1a5cb3;
-}
-
-.virtual-tour a {
-    color: #2d995f;
-}
 
 
 /* Responsive design */
@@ -679,28 +1414,18 @@ iframe {
 }
 
 
-/*kommende events side og om godset-------------------------------*/
+/*kommende events side-------------------------------*/
 
-  @media screen and (min-width: 1001px) {
+  @media screen and (min-width: 800px) {
 
     .de-kommende-events {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         place-items: center;
     }
 
-    .kommende-event-box1{
-        width: 40rem;
-    }
 
-    .kommende-event-box2 {
-        width: 40rem;
-    }
-
-    .kommende-event-box3 {
-        width: 40rem;
-    }
-
+    /*om godset side*/
     
     .info-section {
         max-width: 100rem;
@@ -718,3 +1443,102 @@ iframe {
     }
 
   }
+
+/*Forside Media queries--------------------------*/
+
+@media screen and (min-width: 800px) {
+    .forside_flere_events {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+        grid-template-areas:
+            "forside_flere_events_h2 forside_flere_events_h2"
+            "forside_event1 forside_event2"
+            "forside_event3 ."
+            "forside_flere_events_alle forside_flere_events_alle";
+    }
+    .forside_event {
+        min-width: 100%;
+    }
+    .forside_mere_info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr 1fr;
+        grid-template-areas:
+            "forside_mere_info_h2 forside_mere_info_h2"
+            "forside_info1 forside_info2"
+    }
+}
+@media screen and (min-width: 600px) {
+    .sidebar_input:checked ~ .sidebar_content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        gap: 2rem;
+        top: 8rem;
+        right: 0;
+        background-color:#1D1D1B;
+        padding: 2rem 2rem 2rem 6rem;
+        width: fit-content;
+        height: 100vh;
+    }
+}
+@media screen and (min-width: 1000px) {
+
+    .forside_main p {
+        font-size: 2rem;
+    }
+    .story p {
+        font-size: 1.6rem;
+    }
+    .forside_main h2 {
+        font-size: 5rem;
+    }
+    .forside_event_tekst h3, .forside_info h3 {
+        font-size: 4rem;
+    }
+    .forside_event_tekst > p:first-of-type, .forside_event_tekst > p:last-of-type {
+        font-size: 2.5rem;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.1rem 4rem 10fr;
+        grid-gap: 3rem;;
+    }
+
+    hr {
+        grid-area: 1 / 1 / 2 / 4
+    }
+
+    .so-me {
+        grid-area: 2 / 1 / 3 / 4;
+    }
+    
+    .footer_contact {
+        grid-area: 3 / 1 / 4 / 2
+    }
+
+    .footer_tel {
+        grid-area: 3 / 2 / 4 / 3
+    }
+
+    .footer_info {
+        grid-area: 3 / 3 / 4 / 4
+    }
+
+    footer li, footer li > a, footer p {
+        font-size: 2rem;
+    }
+    .forside_hero p:last-of-type {
+        font-size: 3rem;
+    }
+    .forside_flere_events > p {
+        font-size: 3rem;
+    }
+    .forside_hero h1 {
+        font-size: 11rem;
+    }
+}   

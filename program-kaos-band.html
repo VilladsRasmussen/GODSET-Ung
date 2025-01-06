@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,167 +16,184 @@
 <body>
     <header>
         <a href="index.html"><img class="logo" src="img/godset-ung-logo-hvid.png" alt=""></a>
-        <div>
+
+        <!--Burgermenu-->
+        <nav>
             <a href="#"><i class="fa-solid fa-user"></i></a>
-            <a href="#"><i class="fa-solid fa-bars"></i></a>
-        </div>
+            <input type="checkbox" id="sidebar_active" class="sidebar_input">
+            <label for="sidebar_active" class="sidebar_label_open">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="sidebar_content">
+                <a href="program-kaos-band.html">Kaos Band</a>
+                <a href="kommende-events.html">Flere events til dig</a>
+                <a href="om-godset.html">Om Godset Ung</a>
+                <a href="https://www.godset.net/da/pQPwtb/bagom/frivillig-paa-godset">Bliv Frvillig</a>
+                <div></div>
+                <a href="#">Vilkår og Betingelser</a>
+                <a href="#">Kontakt</a>
+            </div>
+            <label for="sidebar_active" class="sidebar_label_close">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+        </nav>
     </header>
 
-    <section class="hero-program-baggrund">
-        <h1 class="program-h1">
-            KAOS BAND
-            <br>
-            PROGRAM
-        </h1>
-        <img class="hero-program-baggrund-cut" src="img/hans-vivek-By96LAr-34o-unsplash.jpg" alt="">
-        <img class="hero-program-baggrund-gennemsigtig" src="img/hans-vivek-By96LAr-34o-unsplash.jpg" alt="">
+    <section class="kaos-band-program-hero">  
+        <div class="startside-hero">
+            <h1 class="underside-h1">
+                KAOS BAND
+                PROGRAM
+            </h1>
+            <a href="#tilmeldning-id" class="knap_blå kaos-band-program-knap">Tilmeld dig!</a>
+        </div> 
+        <div class="grøn-boks"></div>
+        <div class="grøn-streg"></div>
+        <div class="rød-boks"></div>
+        <div class="rød-streg"></div>
     </section>
-
-    <article class="hero-beskriver">
-        <p class="paragraf-fremhæver">VÆR MED TIL KAOS BAND OG SKAB VENNER FOR LIVET MED EN MUSIK-FYLDT WEEKEND!
+    <article class="hero-beskrivelse">
+        <p class="paragraf-hero">VÆR MED TIL KAOS BAND OG SKAB VENNER FOR LIVET MED EN MUSIK-FYLDT WEEKEND!
             SPIL MUSIK HELE WEEKENDEN ELLER OPLEV EN UFORGLEMMELIG PERFORMANCE!</p>
+        <div class="grå-streg"></div>
     </article>
+
+    <main class="kaos-band-indhold">
 
     <section class="program">
         <h2 class="program-h2">Program</h2>
-
-            <div class="punkt-program-1">
+            <div class="punkt-program-1 punkt-program-alle">
                 <div class="cirkel-forbinder">
                     <div class="cirkel-grøn"></div>
                     <div class="cirkel-streg"></div>
                 </div>
                 <article>
-                <h3 class="grøn-overskrift program-h3">Dato, Tidspunkt</h3>
+                <h3 class="grøn-overskrift program-h4">Dato, Tidspunkt</h3>
                 <p class="paragraf-fremhæver">Vi starter fredag kl. 16.00 med fælles opstart og øvning. 
                    Derefter er der fælles spisning og hygge. Lørdag er der øvning 
-                   og forberedelse til aftenens koncert. Søndag er der morgenmad 
-                   og oprydning. Vi slutter kl. 12.00.</p>
+                   og forberedelse til aftenens koncert.</p>
                 </article>
             </div>
 
-            <div class="punkt-program-2">
+            <div class="punkt-program-2 punkt-program-alle">
                 <div class="cirkel-forbinder">
                     <div class="cirkel-rød"></div>
                     <div class="cirkel-streg"></div>
                 </div>
                 <article>
-                <h3 class="rød-overskrift program-h3">Dato, Tidspunkt</h3>
+                <h3 class="rød-overskrift program-h4">Dato, Tidspunkt</h3>
                 <p class="paragraf-fremhæver">Vi starter fredag kl. 16.00 med fælles opstart og øvning. 
                    Derefter er der fælles spisning og hygge. Lørdag er der øvning 
-                   og forberedelse til aftenens koncert. Søndag er der morgenmad 
-                   og oprydning. Vi slutter kl. 12.00.</p>
+                   og forberedelse til aftenens koncert.</p>
                 </article>
             </div>
 
-            <div class="punkt-program-3">
+            <div class="punkt-program-3 punkt-program-alle">
                 <div class="cirkel-forbinder">
                     <div class="cirkel-blå"></div>
                     <div class="cirkel-streg"></div>
                 </div>
                 <article>
-                <h3 class="blå-overskrift program-h3">Dato, Tidspunkt</h3>
+                <h3 class="blå-overskrift program-h4">Dato, Tidspunkt</h3>
                 <p class="paragraf-fremhæver">Vi starter fredag kl. 16.00 med fælles opstart og øvning. 
                    Derefter er der fælles spisning og hygge. Lørdag er der øvning 
-                   og forberedelse til aftenens koncert. Søndag er der morgenmad 
-                   og oprydning. Vi slutter kl. 12.00.</p>
+                   og forberedelse til aftenens koncert.</p>
                 </article>
             </div>
 
-            <div class="punkt-program-4">
+            <div class="punkt-program-4 punkt-program-alle">
                 <div class="cirkel-forbinder">
                     <div class="cirkel-grøn"></div>
                     <div class="cirkel-streg"></div>
                 </div>
                 <article>
-                <h3 class="grøn-overskrift program-h3">Dato, Tidspunkt</h3>
+                <h3 class="grøn-overskrift program-h4">Dato, Tidspunkt</h3>
                 <p class="paragraf-fremhæver">Vi starter fredag kl. 16.00 med fælles opstart og øvning. 
                    Derefter er der fælles spisning og hygge. Lørdag er der øvning 
-                   og forberedelse til aftenens koncert. Søndag er der morgenmad 
-                   og oprydning. Vi slutter kl. 12.00.</p>
+                   og forberedelse til aftenens koncert.</p>
                 </article>
             </div>
 
-            <div class="punkt-program-5">
+            <div class="punkt-program-5 punkt-program-alle">
                 <div class="cirkel-forbinder">
                     <div class="cirkel-rød"></div>
                     <div class="cirkel-streg"></div>
                 </div>
                 <article>
-                <h3 class="rød-overskrift program-h3">Dato, Tidspunkt</h3>
+                <h3 class="rød-overskrift program-h4">Dato, Tidspunkt</h3>
                 <p class="paragraf-fremhæver">Vi starter fredag kl. 16.00 med fælles opstart og øvning. 
                    Derefter er der fælles spisning og hygge. Lørdag er der øvning 
-                   og forberedelse til aftenens koncert. Søndag er der morgenmad 
-                   og oprydning. Vi slutter kl. 12.00.</p>
+                   og forberedelse til aftenens koncert.</p>
                 </article>
             </div>
 
-            <div class="punkt-program-6">
+            <div class="punkt-program-6 punkt-program-alle">
                 <div class="cirkel-forbinder">
                     <div class="cirkel-blå"></div>
                     <div class="cirkel-streg hidden"></div>
                 </div>
                 <article>
-                <h3 class="blå-overskrift program-h3">Dato, Tidspunkt</h3>
+                <h3 class="blå-overskrift program-h4">Dato, Tidspunkt</h3>
                 <p class="paragraf-fremhæver">Vi starter fredag kl. 16.00 med fælles opstart og øvning. 
                    Derefter er der fælles spisning og hygge. Lørdag er der øvning 
-                   og forberedelse til aftenens koncert. Søndag er der morgenmad 
-                   og oprydning. Vi slutter kl. 12.00.</p>
+                   og forberedelse til aftenens koncert.</p>
                 </article>
             </div>
-           
     </section>
 
-    <section class="hero-program-baggrund">
-        <h2 class="h2-hero">MÆRK ENERGIEN MED MORTEN MUNSTER</h2>
-        <img class="hero-program-baggrund-cut" src="img/morten-munster.jpg" alt="">
-        <img class="hero-program-baggrund-gennemsigtig" src="img/morten-munster.jpg" alt="">
-    </section>
+    <aside class="morten-munster-aside">
 
-    <article class="hero-beskriver">
-        <p class="paragraf-fremhæver">Noget om Morten Münster bla bla bla.
+    <div class="hero-collector">
+    <section class="hero-program-baggrund-morten">
+        <h2 class="h2-hero-morten">MÆRK ENERGIEN MED MORTEN MUNSTER</h2>
+        <div class="grøn-boks-morten"></div>
+        <div class="blå-boks-morten"></div>
+    </section>
+    <article class="hero-beskrivelse">
+        <p class="paragraf-hero-morten">Noget om Morten Münster bla bla bla.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Nullam interdum, leo eget dictum pharetra, nisl erat venenatis metus, 
-            vitae tempus tortor ligula eu sem.</p>
+            Nullam interdum, leo eget dictum pharetra, nisl erat venenatis metus.</p>
+            <div class="grå-streg"></div>
     </article>
+    </div>
 
     <section class="morten-munster">
-    <article class="morten-munster-video">
-        <h3 class="rød-overskrift program-h3">Se Morten Münsters Seneste Video her!</h3>
-        <div>
-            <iframe  
-            src="https://www.youtube.com/embed/zdjuIomvAfg" 
-            title="Bare Vi Er Sammen, Bli'r Det Jul (Musikvideo)" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-            </iframe>
-        </div>
-    </article>
+        <article class="morten-munster-video">
+            <h3 class="rød-overskrift program-h3">Se Morten Münsters Seneste Video her!</h3>
+            <div>
+                <iframe class="senest-video"
+                src="https://www.youtube.com/embed/x6knAREuz6w" 
+                title="Bare Vi Er Sammen, Bli'r Det Jul (Musikvideo)" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+                </iframe>
+            </div>
+        </article>
 
-    <aritcle class="morten-munster-sociale-medier">
-        <h3 class="blå-overskrift program-h3">Følg Morten Münster på de sociale medier</h3>
-        <div>
-            <a href="https://www.tiktok.com/@mortenmonster"><i class="fab fa-tiktok"></i></a>
-            <a href="https://www.instagram.com/mortenmynster/?hl=da"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com/@MortenM%C3%BCnster"><i class="fab fa-youtube"></i></a>
-        </div>
-    </aritcle>
+        <aritcle class="morten-munster-some">
+            <h3 class="blå-overskrift program-h3">Følg Morten Münster på de sociale medier</h3>
+            <div>
+                <a href="https://www.tiktok.com/@mortenmonster"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/mortenmynster/?hl=da"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@MortenM%C3%BCnster"><i class="fab fa-youtube"></i></a>
+            </div>
+        </aritcle>
     </section>
 
-
-
-    <section class="program-tilmeldning">
+    <section id="tilmeldning-id" class="tilmeldning">
         <article>
-            <h4>Vær med til Kaos Band hele weekenden!</h4>
-            <i class="fa-solid fa-arrow-down"></i>
-            <a href="#" class="knap_grøn">Tilmeld!</a>
+            <h4>Vær med til at lave musik hele weekenden!</h4>
+            <a href="#" class="knap_grøn kaos-band-program-knap">Tilmeld Dig Her!</a>
         </article>
         <article>
-            <h4>Vær med til Kaos Band hele weekenden!</h4>
-            <i class="fa-solid fa-arrow-down"></i>
-            <a href="#" class="knap_rød">Køb!</a>
+            <h4>Ville du hellere se dem optræde i stedet?</h4>
+            <a href="#" class="knap_rød kaos-band-program-knap">Køb Billet Her!</a>
         </article>
     </section>
+    </aside>
+
+    </main>
 
 
 

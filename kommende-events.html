@@ -15,10 +15,27 @@
 <body>
     <header>
         <a href="index.html"><img class="logo" src="img/godset-ung-logo-hvid.png" alt=""></a>
-        <div>
+
+        <!--Burgermenu-->
+        <nav>
             <a href="#"><i class="fa-solid fa-user"></i></a>
-            <a href="#"><i class="fa-solid fa-bars"></i></a>
-        </div>
+            <input type="checkbox" id="sidebar_active" class="sidebar_input">
+            <label for="sidebar_active" class="sidebar_label_open">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="sidebar_content">
+                <a href="program-kaos-band.html">Kaos Band</a>
+                <a href="kommende-events.html">Flere events til dig</a>
+                <a href="om-godset.html">Om Godset Ung</a>
+                <a href="https://www.godset.net/da/pQPwtb/bagom/frivillig-paa-godset">Bliv Frvillig</a>
+                <div></div>
+                <a href="#">Vilkår og Betingelser</a>
+                <a href="#">Kontakt</a>
+            </div>
+            <label for="sidebar_active" class="sidebar_label_close">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+        </nav>
     </header>
 
     <main>
@@ -31,12 +48,13 @@
 
                 <!-- Tekst ovenpå -->
                 <div class="hero-tekst">
-                  <h1>FLERE EVENTS<br>TIL DIG</h1>
+                  <h1 class="underside-h1">FLERE EVENTS<br>TIL DIG</h1>
                 </div>
         </section>
 
         <section class="de-kommende-events">
                 <div class="kommende-event-box1">
+                    <div class="overlay-trekant-rød"></div>
                     <img class="kommende-billede" src="img/Godset sal 1.jpg" alt="">
                     <div class="om-events">
                         <h1 class="kommende-events-overskrift">Eksempel på event</h1>
@@ -46,6 +64,7 @@
                 </div>
 
                 <div class="kommende-event-box2">
+                    <div class="overlay-trekant-blå"></div>
                     <img class="kommende-billede" src="img/israel-palacio-Y20JJ_ddy9M-unsplash.jpg" alt="">
                     <div class="om-events">
                         <h1 class="kommende-events-overskrift">Eksempel på event</h1>
@@ -56,6 +75,7 @@
 
 
                 <div class="kommende-event-box3">
+                    <div class="overlay-trekant-grøn"></div>
                     <img class="kommende-billede" src="img/mikkel-bech-OwMIhcZu_X8-unsplash.jpg" alt="">
                     <div class="om-events">
                         <h1 class="kommende-events-overskrift">Eksempel på event</h1>
@@ -64,6 +84,7 @@
                     </div>
                 </div>
                 <div class="kommende-event-box1">
+                    <div class="overlay-trekant-rød"></div>
                     <img class="kommende-billede" src="img/Godset sal 1.jpg" alt="">
                     <div class="om-events">
                         <h1 class="kommende-events-overskrift">Eksempel på event</h1>
@@ -73,6 +94,7 @@
                 </div>
                
                 <div class="kommende-event-box2">
+                    <div class="overlay-trekant-blå"></div>
                     <img class="kommende-billede" src="img/israel-palacio-Y20JJ_ddy9M-unsplash.jpg" alt="">
                     <div class="om-events">
                         <h1 class="kommende-events-overskrift">Eksempel på event</h1>
@@ -83,6 +105,7 @@
 
 
                 <div class="kommende-event-box3">
+                    <div class="overlay-trekant-grøn"></div>
                     <img class="kommende-billede" src="img/mikkel-bech-OwMIhcZu_X8-unsplash.jpg" alt="">
                     <div class="om-events">
                         <h1 class="kommende-events-overskrift">Eksempel på event</h1>
@@ -91,6 +114,29 @@
                     </div>
                 </div>
         </section>
+
+        <section class="pop-up">
+            <!-- Link til at åbne pop-up -->
+         <label for="popup-toggle" class="pop-up-åben">Se alle events på Godset</label>
+       
+         <!-- Pop-up checkbox (styres med CSS) -->
+         <input type="checkbox" id="popup-toggle" class="popup-checkbox">
+       
+         <!-- Pop-up -->
+         <div class="popup-overlay">
+           <div class="popup-box">
+             <p class="popup-besked">
+               DU BLIVER SENDT TIL GODSETS<br>
+               OFFICIELLE HJEMMESIDE (godset.net).<br>
+               VIL DU FORTSÆTTE?
+             </p>
+             <div class="popup-valg-knapper">
+               <a href="https://godset.net" class="btn-ja">JA</a>
+               <label for="popup-toggle" class="btn-nej">NEJ</label>
+             </div>
+           </div>
+         </div>
+       </section>
 
     </main>
 

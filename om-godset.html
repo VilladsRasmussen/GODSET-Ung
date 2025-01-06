@@ -15,10 +15,27 @@
 <body>
     <header>
         <a href="index.html"><img class="logo" src="img/godset-ung-logo-hvid.png" alt=""></a>
-        <div>
+
+        <!--Burgermenu-->
+        <nav>
             <a href="#"><i class="fa-solid fa-user"></i></a>
-            <a href="#"><i class="fa-solid fa-bars"></i></a>
-        </div>
+            <input type="checkbox" id="sidebar_active" class="sidebar_input">
+            <label for="sidebar_active" class="sidebar_label_open">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="sidebar_content">
+                <a href="program-kaos-band.html">Kaos Band</a>
+                <a href="kommende-events.html">Flere events til dig</a>
+                <a href="om-godset.html">Om Godset Ung</a>
+                <a href="https://www.godset.net/da/pQPwtb/bagom/frivillig-paa-godset">Bliv Frvillig</a>
+                <div></div>
+                <a href="#">Vilkår og Betingelser</a>
+                <a href="#">Kontakt</a>
+            </div>
+            <label for="sidebar_active" class="sidebar_label_close">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+        </nav>
     </header>
 <body>
     <section class="hero-om-godset">
@@ -30,21 +47,23 @@
 
         <!-- Tekst ovenpå -->
         <div class="hero-tekst">
-          <h1>OM<br>GODSET</h1>
+          <h1 class="underside-h1">OM<br>GODSET</h1>
         </div>
     </section>
 
     <main class="container">
-    
+
         <section class="info-section">
+            <div class="overlay-trekant-rød"></div>
             <h2>GODSET UNG</h2>
             <p>Godset Ung er et nystartet ungdomstilbud til dig som ung i Kolding-området i 2025.</p>
             <p>Godset Ung danner rammen om et musikalsk koncept og spillested hvor unge kan udtale sig og være med musikalske events - med dig i fokus.</p>
             <br>
-            <p>Vi har løbende flere events hvor du har mulighed for at deltage på en eller flere måder. Godset Ung lancerer et helt nyt event; <a href="program-kaos-band.html">Kaos Band</a>, hvor du kan deltage med din musikalske interesse og optræde, eller deltage som publikum. Læs mere om <a href="program-kaos-band.html">Kaos Band her.</a></p>
+            <p>Vi har løbende flere events hvor du har mulighed for at deltage på en eller flere måder. Godset Ung lancerer et helt nyt event; <a href="program-kaos-band.html">Kaos Band</a>, hvor du kan deltage med din musikalske interesse og optræde, eller deltage som publikum. Læs mere om <a href="program-kaos-band.html">Kaos Band her.</a></p>   
         </section>
 
         <section class="talent-section">
+            <div class="overlay-trekant-blå"></div>
             <h2>TALENT-UDVIKLING</h2>
             <p>Godset arbejder målrettet med udvikling af nye talenter.</p>
             <p>Der bliver bl.a. arbejdet med bandcoaching, live performance og lokale bands for derigennem at skabe support lige fra første niveau.</p>
@@ -52,12 +71,8 @@
         </section>
 
         <section class="virtual-tour">
+            <div class="overlay-trekant-grøn"></div>
             <h2>VIRTUEL TOUR PÅ GODSET</h2>
-            <p>Tag et kig rundt på huset og se hvor fedt det hele er!</p>
-        </section>
-
-        <section class="bliv-frivillig">
-            <h2>BLIV FRIVILLIG</h2>
             <p>Tag et kig rundt på huset og se hvor fedt det hele er!</p>
         </section>
 

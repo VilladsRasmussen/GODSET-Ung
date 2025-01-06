@@ -15,27 +15,39 @@
 <body>
     <header>
         <a href="index.html"><img class="logo" src="img/godset-ung-logo-hvid.png" alt=""></a>
-        <div>
+
+        <!--Burgermenu-->
+        <nav>
             <a href="#"><i class="fa-solid fa-user"></i></a>
-            <a href="#"><i class="fa-solid fa-bars"></i></a>
-        </div>
+            <input type="checkbox" id="sidebar_active" class="sidebar_input">
+            <label for="sidebar_active" class="sidebar_label_open">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="sidebar_content">
+                <a href="program-kaos-band.html">Kaos Band</a>
+                <a href="kommende-events.html">Flere events til dig</a>
+                <a href="om-godset.html">Om Godset Ung</a>
+                <a href="https://www.godset.net/da/pQPwtb/bagom/frivillig-paa-godset">Bliv Frvillig</a>
+                <div></div>
+                <a href="#">Vilkår og Betingelser</a>
+                <a href="#">Kontakt</a>
+            </div>
+            <label for="sidebar_active" class="sidebar_label_close">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+        </nav>
     </header>
 
-    <main>
+    <main class="forside_main">
         <section class="story">
-            <div><img src="img/Godset lys 1.jpg"><p>Lorem Ipsum</p></div>
-            <div><img src="img/Godset lys 1.jpg"><p>Lorem Ipsum</p></div>
-            <div><img src="img/Godset lys 1.jpg"><p>Lorem Ipsum</p></div>
-            <div><img src="img/Godset lys 1.jpg"><p>Lorem Ipsum</p></div>
-            <div><img src="img/Godset lys 1.jpg"><p>Lorem Ipsum</p></div>
-            <div><img src="img/Godset lys 1.jpg"><p>Lorem Ipsum</p></div>
-            <div><img src="img/Godset lys 1.jpg"><p>Lorem Ipsum</p></div>
-            <div><img src="img/Godset lys 1.jpg"><p>Lorem Ipsum</p></div>
-            <div><img src="img/Godset lys 1.jpg"><p>Lorem Ipsum</p></div>
-            <div><img src="img/Godset lys 1.jpg"><p>Lorem Ipsum</p></div>
-            <div><img src="img/Godset lys 1.jpg"><p>Lorem Ipsum</p></div>
-            <div><img src="img/Godset lys 1.jpg"><p>Lorem Ipsum</p></div>
-            <div><img src="img/Godset lys 1.jpg"><p>Lorem Ipsum</p></div>
+            <a href="story.html"><img src="img/Godset lys 1.jpg"><p>Lorem Ipsum</p></a>
+            <a href="story.html"><img src="img/Godset lys 1.jpg"><p>Lorem Ipsum</p></a>
+            <a href="story.html"><img src="img/Godset lys 1.jpg"><p>Lorem Ipsum</p></a>
+            <a href="story.html"><img src="img/Godset lys 1.jpg"><p>Lorem Ipsum</p></a>
+            <a href="story.html"><img src="img/Godset lys 1.jpg"><p>Lorem Ipsum</p></a>
+            <a href="story.html"><img src="img/Godset lys 1.jpg"><p>Lorem Ipsum</p></a>
+            <a href="story.html"><img src="img/Godset lys 1.jpg"><p>Lorem Ipsum</p></a>
+            <a href="story.html"><img src="img/Godset lys 1.jpg"><p>Lorem Ipsum</p></a>
         </section>
 
 
@@ -43,17 +55,75 @@
         <section class="forside_hero">
             <div></div>
             <div></div>
-            <h1>Kaos<br>Band</h1>
-            <p>Kaos<br>Band</p>
-            <p>Er du klar til at mærke energien med Morten Münster?</p>
-            <p>11/12/2024</p>
-            <a href="#" class="knap_blå">Vær Med!</a>
+            <div></div>
+            <div>
+                <h1>Kaos<br>Band</h1>
+                <p>11/12/2024</p>
+                <p>Er du klar til at mærke energien med Morten Münster?</p>
+                <a href="program-kaos-band.html" class="knap_rød">Vær Med!</a>
+            </div>
             <img src="img/kaos-band-billede.png">
         </section>
 
-        <a href="kommende-events.html">kommende events</a>
-        <a href="program-kaos-band.html">Program kaosband</a>
-        <a href="om-godset.html">om godset</a>
+        <section class="forside_hero_beskrivelse">
+            <div>
+                <p>Vær med til Kaos Band og skab venner for livet med en musik-fyldt weekend! Spil musik hele weekenden eller oplev en uforglemmelig performance!</p>
+            <div>
+        </section>
+
+        <section class="forside_flere_events">
+            <h2>Flere Events til Dig</h2>
+            <div class="forside_event" id="forside_event1">
+                <img src="img/mikkel-bech-OwMIhcZu_X8-unsplash.jpg">
+                <div class="forside_event_tekst">
+                    <h3>Eksempel på Event</h3>
+                    <p>20/12/2024 - 21:00</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut itaque culpa inventore sint sunt.</p>
+                    <p>50-150 DKK</p>
+                    <a href="kommende-events.html" class="knap_grøn">Vær Med!</a>
+                </div>
+            </div>
+            <div class="forside_event" id="forside_event2">
+                <img src="img/israel-palacio-Y20JJ_ddy9M-unsplash.jpg">
+                <div class="forside_event_tekst">
+                    <h3>Eksempel på Event</h3>
+                    <p>20/12/2024 - 21:00</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut itaque culpa inventore sint sunt.</p>
+                    <p>50-150 DKK</p>
+                    <a href="kommende-events.html" class="knap_rød">Vær Med!</a>
+                </div>
+            </div>
+            <div class="forside_event" id="forside_event3">
+                <img src="img/Godset sal 1.jpg">
+                <div class="forside_event_tekst">
+                    <h3>Eksempel på Event</h3>
+                    <p>20/12/2024 - 21:00</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut itaque culpa inventore sint sunt.</p>
+                    <p>50-150 DKK</p>
+                    <a href="kommende-events.html" class="knap_rød">Vær Med!</a>
+                </div>
+            </div>
+            <a href="kommende-events.html">Se Alle events for unge</a>
+        </section>
+
+        <section class="forside_mere_info">
+            <h2>Mere Info</h2>
+            <a href="https://www.godset.net/da/pQPwtb/bagom/frivillig-paa-godset"><div class="forside_info" id="forside_info1">
+                <img src="img/Godset backstage 3.jpg">
+                <div>
+                    <h3>Bliv Frivillig</h3>
+                    <p>Lorem Ipsum</p>
+                </div>
+            </div></a>
+            <a href="om-godset.html"><div class="forside_info" id="forside_info2">
+                <img src="img/Loftet.jpg" alt="">
+                <div>
+                    <h3>Mere om Godset Ung</h3>
+                    <p>Lorem Ipsum</p>
+                </div>
+            </div></a>
+        </section>
+
     </main>
 
     <footer>
