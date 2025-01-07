@@ -1287,6 +1287,10 @@ footer p, footer a {
     color: #EA7067;
 }
 
+#heart-react {
+    background-color: none;
+}
+
 .progress-container {
     position: absolute;
     width: 100%;
