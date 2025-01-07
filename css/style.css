@@ -156,6 +156,8 @@ body {
     display: flex;
     gap: 2rem;
     border-radius: 10px;
+    position: relative;
+    overflow: hidden;
 }
 .forside_event img {
     max-width: 12rem;
@@ -170,21 +172,27 @@ body {
 }
 .forside_event h3 {
     font-size: 3rem;
+    z-index: 1;
 }
 .forside_event_tekst > p:first-of-type, .forside_event_tekst > p:last-of-type {
     font-size: 2rem;
     font-family: "Bebas Neue", sans-serif;
 }
+
+.forside_event_tekst {
+    z-index: 1;
+}
+
 #forside_event1 {
-    background-color: #EA7067;
+    background-color: #EB8E87;
     grid-area: forside_event1;
 }
 #forside_event2 {
-    background-color:#6799EE;
+    background-color:#8DAFE9;
     grid-area: forside_event2;
 }
 #forside_event3 {
-    background-color:#46C393;
+    background-color:#6DD6AE;
     grid-area: forside_event3;
 }
 
@@ -434,20 +442,20 @@ footer p, footer a {
 
   .kommende-event-box1 {
     min-width: 100%;
-    height: 30rem;
     background-color: #EB8E87;
     border-radius: 1rem;
     overflow: hidden; /* Sørger for at billede ikke stikker ud */
     display: flex;
     position: relative;
-    padding-right: 2rem;
+    padding: 2rem;
+    gap: 2rem;
   }
 
   .overlay-trekant-rød {
     position: absolute;
     bottom: 0;
     right: 0;
-    left: 30%;
+    left: 33%;
     width: 100%;
     height: 100%;
     background-color: #EA7067;
@@ -459,17 +467,16 @@ footer p, footer a {
   
 
   .kommende-billede {
-    width: 19rem;
-    height: 30rem;
+    max-width: 12rem;
     object-fit: cover;
-    padding: 2rem;
-    border-radius: 3rem;
+    border-radius: 10px;
     z-index: 2;
+
   }
 
   .kommende-events-overskrift {
     padding-top: 2rem;
-    font-size: 3.5rem;
+    font-size: 3rem;
     z-index: 1;
   }
 
@@ -483,24 +490,34 @@ footer p, footer a {
   .om-events {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+    max-width: 100%;
+  }
+  .om-events p:nth-of-type(1), .om-events p:nth-of-type(3) {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    z-index: 1;
+  }
+  .om-events p:nth-of-type(2) {
+    z-index: 1;
   }
 
   .kommende-event-box2 {
     min-width: 100%;
-    height: 30rem;
     background-color: #8DAFE9;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
     position: relative;
-    padding-right: 2rem;
+    padding: 2rem;
+    gap: 2rem;
   }
 
   .overlay-trekant-blå {
     position: absolute;
     bottom: 0;
     right: 0;
-    left: 30%;
+    left: 33%;
     width: 100%;
     height: 100%;
     background-color: #6799EE;
@@ -512,20 +529,20 @@ footer p, footer a {
 
   .kommende-event-box3 {
     min-width: 100%;
-    height: 30rem;
     background-color: #6DD6AE;
     border-radius: 1rem;
     overflow: hidden;
     display: flex;
     position: relative;
-    padding-right: 2rem;
+    padding: 2rem;
+    gap: 2rem;
   }
 
   .overlay-trekant-grøn {
     position: absolute;
     bottom: 0;
     right: 0;
-    left: 30%;
+    left: 33%;
     width: 100%;
     height: 100%;
     background-color: #46C393;
@@ -1347,6 +1364,20 @@ footer p, footer a {
     background-color: #EB8E87;
 }
 
+.overlay-trekant-rød-info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 30%;
+    width: 100%;
+    height: 100%;
+    background-color: #EA7067;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 140%);
+    z-index: 0;
+    opacity: 60%;
+  }
+  
+
 
 .talent-section {
     min-width: 30rem;
@@ -1359,6 +1390,19 @@ footer p, footer a {
     background-color: #8DAFE9;
     overflow: hidden;
 }
+
+.overlay-trekant-blå-talent {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 30%;
+    width: 100%;
+    height: 100%;
+    background-color: #6799EE;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 140%);
+    z-index: 0;
+    opacity: 60%;
+  }
 
 .talent-section p, .info-section p, .virtual-tour p {
     font-size: 2rem;
@@ -1382,6 +1426,19 @@ footer p, footer a {
     background-color: #6DD6AE;
     overflow: hidden;
 }
+
+.overlay-trekant-grøn-virtual {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 30%;
+    width: 100%;
+    height: 100%;
+    background-color: #46C393;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 140%);
+    z-index: 0;
+    opacity: 60%;
+  }
 
 
 /* Links in sections */
