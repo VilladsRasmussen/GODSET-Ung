@@ -475,7 +475,6 @@ footer p, footer a {
   }
 
   .kommende-events-overskrift {
-    padding-top: 2rem;
     font-size: 3rem;
     z-index: 1;
   }
@@ -1551,7 +1550,7 @@ footer p, footer a {
 }
 @media screen and (min-width: 1000px) {
 
-    .forside_main p {
+    .forside_main p, .om-events p:nth-of-type(2) {
         font-size: 2rem;
     }
     .story p {
@@ -1560,10 +1559,10 @@ footer p, footer a {
     .forside_main h2 {
         font-size: 5rem;
     }
-    .forside_event_tekst h3, .forside_info h3 {
+    .forside_event_tekst h3, .forside_info h3, .kommende-events-overskrift {
         font-size: 4rem;
     }
-    .forside_event_tekst > p:first-of-type, .forside_event_tekst > p:last-of-type {
+    .forside_event_tekst > p:first-of-type, .forside_event_tekst > p:last-of-type, .om-events p:first-of-type, .om-events p:last-of-type {
         font-size: 2.5rem;
     }
 
