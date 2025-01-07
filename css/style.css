@@ -1106,7 +1106,7 @@ footer p, footer a {
     }
 
     .cirkel-streg {
-        height: 129%;
+        height: calc(100% + 50px);
     }
 
     .paragraf-fremhæver {
@@ -1264,6 +1264,10 @@ footer p, footer a {
     font-size: 4rem;
     color: white;
     padding: 20px;
+}
+
+.fa-heart:hover {
+    color: #EA7067;
 }
 
 .progress-container {
