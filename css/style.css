@@ -1290,6 +1290,10 @@ footer p, footer a {
     background-color: none;
 }
 
+.fuld-hjerte {
+    color: #EA7067;
+}
+
 .progress-container {
     position: absolute;
     width: 100%;
